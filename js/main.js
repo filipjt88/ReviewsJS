@@ -87,3 +87,13 @@ randomBtn.addEventListener("click", () => {
     showPerson();
 });
 
+
+// Set interval loop person
+let loop = setInterval(function() {
+    currentItem--;
+    if(currentItem < 0) {
+        currentItem = reviews.length - 1;
+    }
+    showPerson();
+},5000);
+
